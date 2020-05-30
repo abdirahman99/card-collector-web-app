@@ -1,0 +1,36 @@
+body{
+    color: #333334;
+    font-family: arial;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh
+}
+
+.main-content {
+    flex-grow: 1;
+}
+footer {
+    background: rgb(199, 26, 26);
+    border-top: 8px solid #0f0202;
+    margin-top: 16px;
+    padding: 8px 16px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+header a {
+    color: #888888;
+    margin-right: 16px;
+    
+}

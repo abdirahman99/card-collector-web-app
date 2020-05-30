@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/jquery/jquery.min.js"></script>
+    <script src="/js/app.js"></script>
+    <title><%= title%></title>
+  </head>
+  <body>
+    <div class="container my-5">
+      <div id="signup" class="w-50 mx-auto">
+        <div class="form-row my-4">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            placeholder="Enter at least 5 characters"
+            class="form-control"
+            name="username"
+            id="username"
+          />
+        </div>
+        <div class="form-row my-4">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            placeholder="Enter at least 5 characters"
+            class="form-control"
+            name="password"
+            id="password"
+          />
+        </div>
+        <div class="form-row my-4">
+          <button class="btn btn-primary" id="signup-btn">Sign up</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

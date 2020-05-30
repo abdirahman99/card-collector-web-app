@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/jquery/jquery.min.js"></script>
+    <script src="/js/app.js"></script>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <div class="container-fluid p-5">
+      <div class="row">
+        <div class="col-md-6 isloggedin">
+          <h3 class="font-weight-light" id="username"></h3>
+          <button class="btn btn-success m-2" id="logout">Logout</button>
+        </div>
+        <div class="col-md-6 not-isloggedin">
+          <a href="/login" class="btn btn-primary m-2 p-2 w-25">Log In</a>
+          <a href="/signup" class="btn btn-danger m-2 p-2 w-25">Signup</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <h1 class="font-weight-light">Friends Search</h1>
+          <div class="form-row">
+            <label for="searchfriends">Search </label>
+            <input type="text" class="form-control" id="searchfriends" />
+          </div>
+          <ul class="list-group w-100 mx-0 my-3" id="searchfriendsoutput"></ul>
+        </div>
+        <div class="col-md-3">
+          <h1 class="font-weight-light">Requests</h1>
+          <ul class="list-group w-100 mx-0 my-3" id="requestfriendsoutput"></ul>
+        </div>
+        <div class="col-md-3">
+          <h1 class="font-weight-light">Select Friend to Trade</h1>
+          <div id="trade-friends"></div>
+        </div>
+        <div class="col-md-3">
+          <h1 class="font-weight-light">Select cards to Trade</h1>
+          <div id="trade-cards"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
